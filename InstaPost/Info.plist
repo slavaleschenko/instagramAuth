@@ -4,6 +4,17 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>http://localhost</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string>http://localhost</string>
+		</dict>
+	</array>
 	<key>InstagramAppClientId</key>
 	<string>8600a9c359234814baf67e4d4efab5aa</string>
 	<key>InstagramAppRedirectURL</key>

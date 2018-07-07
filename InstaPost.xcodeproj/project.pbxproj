@@ -15,6 +15,15 @@
 		8404134220EA415600283950 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8404134020EA415600283950 /* LaunchScreen.storyboard */; };
 		8404134A20EA44A100283950 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404134920EA44A100283950 /* API.swift */; };
 		8404134E20EA870C00283950 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404134D20EA870C00283950 /* WebViewController.swift */; };
+		84FE4E6320EE309F00BE74E4 /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4E6220EE309F00BE74E4 /* SearchController.swift */; };
+		84FE4E6A20EE3F2C00BE74E4 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4E6920EE3F2C00BE74E4 /* APIService.swift */; };
+		84FE4E6D20EE43DB00BE74E4 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4E6C20EE43DB00BE74E4 /* LoginService.swift */; };
+		84FE4E6F20EE4A9E00BE74E4 /* APIRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4E6E20EE4A9E00BE74E4 /* APIRequestManager.swift */; };
+		84FE4E7120EE4C5C00BE74E4 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4E7020EE4C5C00BE74E4 /* TargetType.swift */; };
+		84FE4E7520EF7B8200BE74E4 /* WebViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4E7420EF7B8200BE74E4 /* WebViewInteractor.swift */; };
+		84FE4E7720EF7B9B00BE74E4 /* WebViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4E7620EF7B9B00BE74E4 /* WebViewRouter.swift */; };
+		84FE4E7920EF7BAE00BE74E4 /* WebViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4E7820EF7BAE00BE74E4 /* WebViewPresenter.swift */; };
+		84FE4E7B20EF807A00BE74E4 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE4E7A20EF807A00BE74E4 /* NavigationRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +38,15 @@
 		8404134320EA415600283950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8404134920EA44A100283950 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8404134D20EA870C00283950 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		84FE4E6220EE309F00BE74E4 /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		84FE4E6920EE3F2C00BE74E4 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		84FE4E6C20EE43DB00BE74E4 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		84FE4E6E20EE4A9E00BE74E4 /* APIRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestManager.swift; sourceTree = "<group>"; };
+		84FE4E7020EE4C5C00BE74E4 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
+		84FE4E7420EF7B8200BE74E4 /* WebViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewInteractor.swift; sourceTree = "<group>"; };
+		84FE4E7620EF7B9B00BE74E4 /* WebViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewRouter.swift; sourceTree = "<group>"; };
+		84FE4E7820EF7BAE00BE74E4 /* WebViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewPresenter.swift; sourceTree = "<group>"; };
+		84FE4E7A20EF807A00BE74E4 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
 		B75FAD7F6C9D407C9D1F3062 /* Pods-InstaPost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaPost.release.xcconfig"; path = "Pods/Target Support Files/Pods-InstaPost/Pods-InstaPost.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,15 +84,73 @@
 			isa = PBXGroup;
 			children = (
 				8404133720EA415300283950 /* AppDelegate.swift */,
-				8404134920EA44A100283950 /* API.swift */,
-				8404133920EA415300283950 /* ViewController.swift */,
-				8404134D20EA870C00283950 /* WebViewController.swift */,
+				84FE4E6820EE3D1500BE74E4 /* Networking */,
+				84FE4E6B20EE43BD00BE74E4 /* Services */,
+				84FE4E6420EE3B6C00BE74E4 /* AppLogin */,
+				84FE4E6520EE3BA500BE74E4 /* WebViewInstagramLogin */,
+				84FE4E6620EE3BD600BE74E4 /* Search */,
+				84FE4E6720EE3BE300BE74E4 /* SearchResults */,
 				8404133B20EA415300283950 /* Main.storyboard */,
 				8404133E20EA415600283950 /* Assets.xcassets */,
 				8404134020EA415600283950 /* LaunchScreen.storyboard */,
 				8404134320EA415600283950 /* Info.plist */,
+				84FE4E7A20EF807A00BE74E4 /* NavigationRouter.swift */,
 			);
 			path = InstaPost;
+			sourceTree = "<group>";
+		};
+		84FE4E6420EE3B6C00BE74E4 /* AppLogin */ = {
+			isa = PBXGroup;
+			children = (
+				8404133920EA415300283950 /* ViewController.swift */,
+			);
+			path = AppLogin;
+			sourceTree = "<group>";
+		};
+		84FE4E6520EE3BA500BE74E4 /* WebViewInstagramLogin */ = {
+			isa = PBXGroup;
+			children = (
+				84FE4E7820EF7BAE00BE74E4 /* WebViewPresenter.swift */,
+				84FE4E7620EF7B9B00BE74E4 /* WebViewRouter.swift */,
+				8404134D20EA870C00283950 /* WebViewController.swift */,
+				84FE4E7420EF7B8200BE74E4 /* WebViewInteractor.swift */,
+			);
+			path = WebViewInstagramLogin;
+			sourceTree = "<group>";
+		};
+		84FE4E6620EE3BD600BE74E4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				84FE4E6220EE309F00BE74E4 /* SearchController.swift */,
+			);
+			name = Search;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		84FE4E6720EE3BE300BE74E4 /* SearchResults */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SearchResults;
+			sourceTree = "<group>";
+		};
+		84FE4E6820EE3D1500BE74E4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				8404134920EA44A100283950 /* API.swift */,
+				84FE4E6E20EE4A9E00BE74E4 /* APIRequestManager.swift */,
+				84FE4E6920EE3F2C00BE74E4 /* APIService.swift */,
+				84FE4E7020EE4C5C00BE74E4 /* TargetType.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		84FE4E6B20EE43BD00BE74E4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				84FE4E6C20EE43DB00BE74E4 /* LoginService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		882984ED368B53C96372CCEA /* Frameworks */ = {
@@ -210,10 +286,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FE4E7520EF7B8200BE74E4 /* WebViewInteractor.swift in Sources */,
+				84FE4E6F20EE4A9E00BE74E4 /* APIRequestManager.swift in Sources */,
 				8404133A20EA415300283950 /* ViewController.swift in Sources */,
+				84FE4E6320EE309F00BE74E4 /* SearchController.swift in Sources */,
+				84FE4E7120EE4C5C00BE74E4 /* TargetType.swift in Sources */,
 				8404134A20EA44A100283950 /* API.swift in Sources */,
 				8404133820EA415300283950 /* AppDelegate.swift in Sources */,
+				84FE4E6A20EE3F2C00BE74E4 /* APIService.swift in Sources */,
+				84FE4E7B20EF807A00BE74E4 /* NavigationRouter.swift in Sources */,
 				8404134E20EA870C00283950 /* WebViewController.swift in Sources */,
+				84FE4E6D20EE43DB00BE74E4 /* LoginService.swift in Sources */,
+				84FE4E7920EF7BAE00BE74E4 /* WebViewPresenter.swift in Sources */,
+				84FE4E7720EF7B9B00BE74E4 /* WebViewRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -45,14 +45,14 @@
         <!--Web View Controller-->
         <scene sceneID="vqc-vY-gkd">
             <objects>
-                <viewController id="K42-bh-BEe" customClass="WebViewController" customModule="InstaPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="K42-bh-BEe" customClass="WebViewController" customModule="InstaPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cdX-rM-hmW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXn-it-z1q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
@@ -62,7 +62,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="FXn-it-z1q" firstAttribute="leading" secondItem="cdX-rM-hmW" secondAttribute="leading" id="cVx-JO-Xhm"/>
-                            <constraint firstItem="FXn-it-z1q" firstAttribute="top" secondItem="cdX-rM-hmW" secondAttribute="top" id="emq-YY-yn9"/>
+                            <constraint firstItem="FXn-it-z1q" firstAttribute="top" secondItem="cdX-rM-hmW" secondAttribute="top" constant="64" id="emq-YY-yn9"/>
                             <constraint firstItem="FXn-it-z1q" firstAttribute="bottom" secondItem="EVW-Gs-eqY" secondAttribute="bottom" id="faS-fs-k62"/>
                             <constraint firstAttribute="trailing" secondItem="FXn-it-z1q" secondAttribute="trailing" id="slF-33-EBS"/>
                         </constraints>
@@ -75,6 +75,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hWm-oc-K3k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1848.8" y="132.68365817091455"/>
+        </scene>
+        <!--Search Controller-->
+        <scene sceneID="gdD-Db-G8k">
+            <objects>
+                <viewController storyboardIdentifier="searchController" id="dUh-Bm-mkB" customClass="SearchController" customModule="InstaPost" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hz6-IB-Shq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbZ-uf-hG6">
+                                <rect key="frame" x="166" y="323" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="ocP-Pr-E3N"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="token" destination="sbZ-uf-hG6" id="myi-9M-nt3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X10-Oa-Q7F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2708" y="131"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lqh-cd-Iup">
